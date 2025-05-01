@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script>
+
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
+</script>
+
+
+<style>
+
+
+img.logo {
+  width: 50%;
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #fff;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 50%;
+  box-shadow: 8px 8px 15px #cbced1, -8px -8px 15px #fff;
+}
+
+/*USERNAME ICON*/
+
+        .input-icons i {
+            position: absolute;
+            object-fit: cover;
+        }
+         
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+         
+        .icon {
+            padding: 25px;
+            color: black;
+            min-width: 50px;
+            text-align: center;
+        }
+         
+        .input-field {
+            width: 100%;
+            text-align: center;
+        }
+
+        #eyeicon{
+            color: black;
+            padding-top: 25px;
+            padding-left: 340px;
+        }
+
+
+
+</style>
+</head>
+<body>
+
+<form action="DASHBOARD.html" method="post">
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+            <img src="logo.png" alt="logo" class="logo">
+        </div>
+    </div>
+
+
+    <div class="row" >
+        <div class="col-4"></div>
+        <div class="col-6 input-icons">
+            <label for="uname"><b>USERNAME</b></label><br>
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" name="uname" required><br>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6 input-icons">
+            <label for="psw"><b>PASSWORD</b></label><br>
+            <i class="fa fa-key icon"></i> <i class="fa fa-eye" id="eyeicon" onclick="myFunction()"></i>  
+            <input class="input-field" type="password" name="password" id="myInput">
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6" style="padding-top: 20px;">
+            <button type="submit">Login</button>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
